@@ -1,0 +1,211 @@
+/* Reset and base styles */
+/* ... */
+
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: radial-gradient(circle, #e6dada 0%, #58624d 100%);
+  }
+  
+ 
+  /* Header styles */
+  header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url('https://api.ellecanada.com/app/uploads/2023/02/Biomimicry-1200x400.png');
+    background-size: cover;
+    color: rgb(250, 247, 247);
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Section styles */
+  .section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tip,
+  .product {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background-color: #fff;
+  }
+  
+  .tip h3,
+  .product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Button styles */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #ffcc00;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff0066;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .contact-form {
+    text-align: center;
+    background: radial-gradient(circle, #e7dcdc 0%, #7e7171 100%);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #ff0066;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ff3399;
+  }  
+  /* ... (previous CSS styles remain unchanged) */
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  
+  /* ... (other styles for the contact form remain unchanged) */
+  .card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  /* ... (previous CSS styles remain unchanged) */
+
+.container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    right: -10%;
+    bottom: -10%;
+    z-index: -1;
+    background: radial-gradient(circle, #959292 0%, #2e2424 100%);
+    opacity: 0;
+    transition: opacity 0.4s, transform 0.4s;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  
+  .container:hover::before {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  

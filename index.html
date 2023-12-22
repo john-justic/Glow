@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Education Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Skincare Education Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tips">Skincare Tips</a></li>
+          <li><a href="#products">Recommended Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Welcome to Skincare Education Hub</h2>
+        <p>Explore the world of skincare and discover tips for healthy and glowing skin.</p>
+        <a href="#tips" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section id="tips" class="section">
+      <div class="container">
+        <h2>Skincare Tips</h2>
+        <div class="grid">
+          <div class="tip">
+            <h3>Tip 1</h3>
+            <p>Tip description goes here.</p>
+          </div>
+          <div class="tip">
+            <h3>Tip 2</h3>
+            <p>Tip description goes here.</p>
+          </div>
+          <!-- Add more tips -->
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <h2>Recommended Products</h2>
+        <div class="grid">
+          <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Description of Product 1.</p>
+          </div>
+          <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product Name 2</h3>
+            <p>Description of Product 2.</p>
+          </div>
+          <!-- Add more products -->
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+        <div class="card">
+          <form id="contactForm" class="contact-form">
+            <h2>Contact Us</h2>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Skincare Education Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
